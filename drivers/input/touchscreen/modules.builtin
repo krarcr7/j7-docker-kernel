@@ -1,0 +1,6 @@
+kernel/drivers/input/touchscreen/of_touchscreen.ko
+kernel/drivers/input/touchscreen/melfas_mms400/melfas_mms400.ko
+kernel/drivers/input/touchscreen/melfas_mms400/melfas_mms400_mod.ko
+kernel/drivers/input/touchscreen/melfas_mms400/melfas_mms400_test.ko
+kernel/drivers/input/touchscreen/melfas_mms400/melfas_mms400_cmd.ko
+kernel/drivers/input/touchscreen/melfas_mms400/melfas_mms438_fw_update.ko

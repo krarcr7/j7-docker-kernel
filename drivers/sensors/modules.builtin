@@ -1,0 +1,5 @@
+kernel/drivers/sensors/st_lsm6ds3.ko
+kernel/drivers/sensors/st_lsm6ds3_i2c.ko
+kernel/drivers/sensors/tmd3725.ko
+kernel/drivers/sensors/yas537/yas_mag_drv-yas537.ko
+kernel/drivers/sensors/yas537/yas_mag_kernel.ko

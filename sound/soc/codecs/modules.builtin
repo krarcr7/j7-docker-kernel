@@ -1,0 +1,3 @@
+kernel/sound/soc/codecs/snd-soc-cod3026.ko
+kernel/sound/soc/codecs/snd-soc-audmixer-v2.ko
+kernel/sound/soc/codecs/snd-soc-dummy.ko
