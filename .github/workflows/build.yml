@@ -1,0 +1,36 @@
+name: Build J7 Docker Kernel
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y build-essential bc bison flex libssl-dev libelf-dev gcc-aarch64-linux-gnu
+
+      - name: Set config
+        run: |
+          export ARCH=arm64
+          export ANDROID_MAJOR_VERSION=p
+          make exynos7870-j7y17lte_defconfig
+
+      - name: Build kernel
+        run: |
+          export ARCH=arm64
+          export ANDROID_MAJOR_VERSION=p
+          export CROSS_COMPILE=aarch64-linux-gnu-
+          make -j$(nproc)
+
+      - name: Upload Image
+        uses: actions/upload-artifact@v4
+        with:
+          name: j7-kernel-image
+          path: arch/arm64/boot/Image
