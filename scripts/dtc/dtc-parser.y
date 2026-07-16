@@ -19,6 +19,7 @@
  */
 
 %{
+#define YYLTYPE_IS_DECLARED 1
 #include <stdio.h>
 
 #include "dtc.h"
