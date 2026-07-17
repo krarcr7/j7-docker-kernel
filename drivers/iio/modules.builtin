@@ -1,3 +1,0 @@
-kernel/drivers/iio/industrialio.ko
-kernel/drivers/iio/alarm.ko
-kernel/drivers/iio/adc/exynos_adc.ko

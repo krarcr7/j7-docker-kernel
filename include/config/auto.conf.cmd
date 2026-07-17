@@ -114,6 +114,7 @@ deps_config := \
 	drivers/firmware/efi/Kconfig \
 	drivers/firmware/google/Kconfig \
 	drivers/firmware/Kconfig \
+	drivers/kernelsu/Kconfig \
 	drivers/icdrv/Kconfig \
 	drivers/five/five_tee_driver/Kconfig \
 	drivers/five/Kconfig \
